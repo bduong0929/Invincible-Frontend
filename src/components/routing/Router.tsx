@@ -15,7 +15,7 @@ export default function Router() {
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/account/login" element={<LoginPage />} />
+                <Route path="/account/signin" element={<LoginPage />} />
 
                 {/* 404 not found page */}
                 <Route path="*" element={<ErrorPage />} />
