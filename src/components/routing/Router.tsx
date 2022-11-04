@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
+import ClothingPage from "../../pages/clothing/ClothingPage";
 import ErrorPage from "../../pages/ErrorPage";
 import HomePage from "../../pages/HomePage";
-import LoginPage from "../../pages/LoginPage";
 import Layout from "./Layout";
 
 {
@@ -15,7 +15,7 @@ export default function Router() {
         <Routes>
             <Route path="/" element={<Layout />}>
                 <Route path="/" element={<HomePage />} />
-                <Route path="/account/signin" element={<LoginPage />} />
+                <Route path="/collections/:name" element={<ClothingPage />} />
 
                 {/* 404 not found page */}
                 <Route path="*" element={<ErrorPage />} />

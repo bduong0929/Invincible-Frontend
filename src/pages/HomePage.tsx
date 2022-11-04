@@ -1,14 +1,28 @@
+import { Link } from "react-router-dom";
 
-export default function HomePage() {
+const HomePage = () => {
     return (
         <div className="flex flex-col items-center">
-            {/* homepage title */}
-            <h1 className="font-mono text-5xl font-bold italic m-16">BE INVINCIBLE</h1>
+            <img
+                src="https://media.zicxa.com/1514044"
+                style={{ width: "100%", height: "900px", objectFit: "cover" }}
+            />
 
-            <div id="default-carousel" className="relative" data-carousel="static">
-                <img className="rounded-md"
-                    src="https://images.unsplash.com/photo-1580051745101-2dca6e53f15c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8N3wxMDY4OTg3N3x8ZW58MHx8fHw%3D&w=1000&q=80" />
+            <div
+                className="flex flex-col items-center gap-5 absolute"
+                style={{ top: "40%" }}>
+
+                <h2
+                    className="text-5xl text-white font-bold font-achivo">BE INVINCIBLE
+                </h2>
+
+                <Link
+                    to={"/collections/all"}
+                    className="bg-white px-5 py-3 font-achivo rounded-sm transition-all ease-in hover:bg-slate-700 hover:text-white hover:px-6">SHOP NOW
+                </Link>
             </div>
         </div>
     );
 }
+
+export default HomePage;

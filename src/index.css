@@ -4,5 +4,15 @@
 
 @font-face {
     font-family: "bodoni";
-    src: url("../public/Bodoni_Compressed.otf");
+    src: url("../public/fonts/Bodoni_Compressed.otf");
+}
+
+@font-face {
+    font-family: "shapiro";
+    src: url("../public/fonts/shapiro-w05-72-heavy.otf");
+}
+
+@font-face {
+    font-family: "achivo";
+    src: url("../public/fonts/Archivo-VariableFont_wdth\,wght.ttf");
 }

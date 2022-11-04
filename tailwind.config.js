@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        bodoni: "bodoni"
+        bodoni: "bodoni",
+        shapiro: "shapiro",
+        achivo: "achivo"
       }
     },
   },
