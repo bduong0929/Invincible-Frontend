@@ -18,7 +18,7 @@ const HomePage = () => {
 
                 <Link
                     to={"/collections/all"}
-                    className="bg-white px-5 py-3 font-achivo rounded-sm transition-all ease-in hover:bg-slate-700 hover:text-white hover:px-6">SHOP NOW
+                    className="bg-white px-5 py-3 font-achivo rounded-sm transition-all ease-in hover:bg-slate-600 hover:text-white hover:px-6">SHOP NOW
                 </Link>
             </div>
         </div>

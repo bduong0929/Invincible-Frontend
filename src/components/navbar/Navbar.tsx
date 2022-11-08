@@ -1,8 +1,11 @@
-import { useEffect, useRef, useState } from "react";
-import { FaShoppingBag, FaSearch, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import INV_API from "../../ApiConfig";
 import Product from "../../models/Product";
+import ChevronDownIcon from "../../assets/icons/ChevronDownIcon";
+import ChevronUpIcon from "../../assets/icons/ChevronUpIcon";
+import SearchIcon from "../../assets/icons/SearchIcon";
+import ShoppingIconBag from "../../assets/icons/ShoppingBagIcon";
 import ShopMenu from "./ShopMenu";
 
 export default function Navbar() {
@@ -42,7 +45,7 @@ export default function Navbar() {
                         className="flex items-center gap-2"
                         onMouseEnter={() => setOpen(true)}
                         onMouseLeave={onLeaveShopMenu}> Shop
-                        {!open ? <FaChevronDown /> : <FaChevronUp />}
+                        {!open ? <ChevronDownIcon /> : <ChevronUpIcon />}
                         {open && <ShopMenu products={products} setOpen={setOpen} />}
                     </li>
 
@@ -54,11 +57,11 @@ export default function Navbar() {
 
                 {/* icon list */}
                 <ul className="flex px-52 gap-5">
-                    <button className="text-2xl"><FaSearch /></button>
+                    <button className="text-2xl"><SearchIcon /></button>
 
                     <Link
                         to={"/cart"}
-                        className="text-2xl"><FaShoppingBag />
+                        className="text-2xl"><ShoppingIconBag />
                     </Link>
                 </ul>
             </nav>
